@@ -1,0 +1,2362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml-stylesheet type="text/xsl" href="/layout/character-sheet.xsl">
+<html>
+<head>
+<link href="favicon.ico" rel="shortcut icon">
+<title>The World of Warcraft Armory</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="The World of Warcraft Armory is a vast searchable database of information for World of Warcraft - taken straight from the real servers. It is the most comprehensive and up-to-date database on the characters, arena teams, guilds, items, dungeons, raids, bosses, and faction rewards of World of Warcraft in existence." name="description">
+<script src="/shared/global/third-party/detection.js" type="text/javascript"></script>
+<style media="screen, projection" type="text/css">
+    @import "css/master.css";
+	@import "css/en_us/language.css";
+</style>
+<script type="text/javascript">
+//
+if (is_moz) {
+} else if (is_ie7) {
+    document.write('<link rel="stylesheet" type="text/css" media="screen, projection" href="css/ie7.css" />');
+}	
+else if (is_ie6) {
+    document.write('<link rel="stylesheet" type="text/css" media="screen, projection" href="css/ie.css" />');
+
+     try {
+	  document.execCommand("BackgroundImageCache", false, true);
+	} catch(err) {}
+}	
+else if (is_opera) {
+    document.write('<link rel="stylesheet" type="text/css" media="screen, projection" href="css/opera.css" />');
+}
+if (is_mac && !is_moz) {
+   	document.write('<link rel="stylesheet" type="text/css" media="screen, projection" href="css/opera-mac.css" />');
+}
+
+if (is_safari && is_mac) {
+	if (is_safari3)
+	    document.write('<link rel="stylesheet" type="text/css" media="screen, projection" href="css/safari3.css" />');
+   document.write('<link rel="stylesheet" type="text/css" media="screen, projection" href="css/safari.css" />');
+} else if (is_safari) {
+    document.write('<link rel="stylesheet" type="text/css" media="screen, projection" href="css/safari-pc.css" />');
+}
+	
+//
+</script>
+<div id="containerJavascript"></div>
+</head>
+<body>
+<div style="display:none;">
+<iframe allowtransparency="true" frameborder="0" height="1" leftmargin="0" marginheight="0" marginwidth="0" scrolling="no" src="http://view.atdmt.com/NTB/iview/d465f9cb65954aba85e355aa6d5553be/direct;wi.1;hi.1/01?click=" topmargin="0" width="1">
+<script language="JavaScript" type="text/javascript">
+				document.write('<a href="http://clk.atdmt.com/NTB/go/d465f9cb65954aba85e355aa6d5553be/direct;wi.1;hi.1/01/" target="_blank"><img src="http://view.atdmt.com/NTB/view/d465f9cb65954aba85e355aa6d5553be/direct;wi.1;hi.1/01/"></a>');
+				</script>
+<noscript>
+<a href="http://clk.atdmt.com/NTB/go/d465f9cb65954aba85e355aa6d5553be/direct;wi.1;hi.1/01/" target="_blank"><img border="0" src="http://view.atdmt.com/NTB/view/d465f9cb65954aba85e355aa6d5553be/direct;wi.1;hi.1/01/"></a>
+</noscript>
+</iframe>
+</div>
+<style> @import "/shared/global/menu/topnav/topnav.css"; </style>
+<script>global_nav_lang = 'en_us'</script>
+<div class="tn_armory" id="shared_topnav">
+<script src="/shared/global/menu/topnav/buildtopnav.js"></script>
+</div>
+<form id="historyStorageForm" method="GET">
+<textarea id="historyStorageField" name="historyStorageField"></textarea>
+</form>
+<script src="js/armory.js" type="text/javascript"></script><script src="js/dhtmlHistory.js" type="text/javascript"></script><script src="js/en_us/strings.js" type="text/javascript"></script>
+<table id="armory">
+<tr>
+<td width="50%"></td><td>
+<div class="deco">
+<a class="logo" href="http://www.worldofwarcraft.com"><span>World of Warcraft</span></a>
+</div>
+<div class="top-anchor-int" id="divChains">
+<em></em><em class="rc"></em>
+</div>
+<script type="text/javascript">
+var theLang = "en_us";
+	var searchQueryValue = '';
+	if (getcookie2("armory.cookieSearch")) {
+		searchQueryValue = getcookie2("armory.cookieSearch");
+	} else {
+		searchQueryValue = 'Search the Armory';	
+	}
+
+        
+
+       if(region != "KR" && region != "TW"){
+            searchQueryValue = unescape(searchQueryValue);
+       }
+
+	var globalSearch = "1";
+	setcookie("cookieLangId", theLang); // fixed a bug (when the page used a function 'document(url)')
+</script>
+<div class="other" id="indexChange1">
+<div class="search-container" id="indexChange2">
+<div class="search">
+<div class="adv-search">
+<em></em><a class="title-advsearch"></a><a class="advsearch" href="item-search.xml">Items</a>
+</div>
+<div class="search-right">
+<a class="title-search"><span>Search the Armory</span></a>
+<div class="input">
+<div class="dd">
+<div class="dropDowner">
+<a class="dropTrigger" href="javascript:void(0);" id="replaceSearchOption" onmouseout="javascript: getElementById('searchCat').style.display='none';" onmouseover="javascript: getElementById('searchCat').style.display='block';">Armory</a>
+<div class="searchMenu" id="searchCat" onmouseout="javascript: getElementById('searchCat').style.display='none';" onmouseover="javascript: getElementById('searchCat').style.display='block';">
+<del></del>
+<div class="sm-content">
+<a href="#" onClick="javascript: menuSelect('Armory', 'all'); return false;">Armory</a><a href="#" onClick="javascript: menuSelect('Arena Teams', 'arenateams'); return false;">Arena Teams</a><a href="#" onClick="javascript: menuSelect('Characters', 'characters'); return false;">Characters</a><a href="#" onClick="javascript: menuSelect('Guilds', 'guilds'); return false;">Guilds</a><a href="#" onClick="javascript: menuSelect('Items', 'items'); return false;">Items</a>
+</div>
+<q></q>
+</div>
+</div>
+</div>
+<div class="arrow"></div>
+<form action="search.xml" method="get" name="formSearch" onSubmit="javascript: return menuCheckLength(document.formSearch);">
+<div class="ipl">
+<div style="position: relative; z-index: 90; left: -160px;">
+<input id="armorySearch" maxlength="72" name="searchQuery" onBlur="javascript: checkBlur();" onFocus="javascript: checkClear();" size="16" type="text" value="Search the Armory">
+</div>
+<div id="errorSearchType"></div>
+<div id="formSearch_errorSearchLength" onMouseOver="javascript: this.innerHTML = '';"></div>
+<input name="searchType" type="hidden" value="all">
+</div>
+<script type="text/javascript">
+
+	var searchTypeValue = getcookie2("cookieMenu");
+	searchTypeValue = searchTypeValue.replace("ext=", "");
+	if (searchTypeValue == "Armory")
+		searchTypeValue = "all";
+	var searchTypeText = getcookie2("cookieMenuText");
+	if (!searchTypeValue) {
+		searchTypeValue	= "all";
+		setcookie('cookieMenu', "all");
+	} else {
+		if (searchTypeValue != 'all')
+			document.getElementById('replaceSearchOption').innerHTML = searchTypeText;
+	}
+
+document.formSearch.searchQuery.value = searchQueryValue;
+document.formSearch.searchType.value = searchTypeValue;
+
+</script>
+<div class="ip">
+<div class="fb"></div>
+</div>
+<div class="submit" style="position:relative; z-index: 100;">
+<a class="submit" href="javascript:void(0);" onClick="javascript: return menuCheckLength(document.formSearch);"></a>
+</div>
+<div class="searchTrick">
+<input id="dummy" onBlur="javascript: hideDropBox();" size="2" type="button">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="backplate">
+<div class="bp2">
+<span class="general-image" id="imageLeft"></span>
+<div class="ab-container">
+<h3 class="banner">
+<span class="armory-left"></span><a class="armory-title" href="index.xml"><span id="armoryTitleRef">The Armory</span></a>
+</h3>
+<p class="beta"></p>
+<a class="betaLink" href="index.xml"><img src="images/pixel.gif"></a>
+</div>
+<div class="pin-container">
+<div class="loginBox">
+<div class="loginContents">
+<div class="toplogincontainer">
+<div class="toploginright"></div>
+<div style="height: 23px; background: url('../images/login-armory-bg.gif') repeat-x top left; float: right; padding: 3px 7px 0;">
+<form id="loginRedirect" method="post" name="loginRedirect">
+<input id="passThrough" name="passThrough" type="hidden" value="1"><input id="redirectUrl" name="redirectUrl" type="hidden"><a alt="" href="javascript: document.loginRedirect.submit()">
+<div style="display: block; float: left; vertical-align: baseline; margin-top: -2px;  width: 25px; height: 23px; background: url('../images/tab-key-3.gif') no-repeat top left; margin-right: 4px;"></div>Log In</a>
+</form>
+<script type="text/javascript">
+		  document.getElementById('loginRedirect').action = "https://"+ document.location.host +"/login.xml";
+		  </script>
+</div>
+<div class="toploginleft"></div>
+</div>
+<script type="text/javascript">document.getElementById('redirectUrl').value = window.location.pathname + window.location.search;</script>
+</div>
+</div>
+<div class="pinProfile" id="showHidePin">
+<div class="pin-back">
+<div class="hord" id="changeClassFaction">
+<h1></h1>
+<div class="pin-base">
+<strong id="replacePinCharName1"></strong>
+<p id="replacePinGuildName1"></p>
+</div>
+<div class="pin-clone">
+<strong id="replacePinCharName2"></strong>
+<p id="replacePinGuildName2"></p>
+<div id="replacePinButton">
+<a class="unpin-grey" href="javascript: ;" onMouseOut="hideTip();" onMouseOver="javascript: showTip(&quot;To pin a profile, search for and find a character.&quot;);"></a>
+</div>
+</div>
+<div class="pinArena">
+<div id="replaceTeam2"></div>
+<div id="replaceTeam3"></div>
+<div id="replaceTeam5"></div>
+</div>
+<div class="pinNav">
+<a class="pdown0" href="javascript: ;" id="idPinNavArrow" onMouseOut="javascript: document.getElementById('pinprofile').style.visibility = 'hidden';" onMouseOver="javascript: hoverPinOption();"></a>
+</div>
+</div>
+</div>
+<div class="tooltip" id="pinprofile" onMouseOut="javascript: document.getElementById('pinprofile').style.visibility='hidden';" onMouseOver="javascript: document.getElementById('pinprofile').style.visibility='visible';">
+<table style="margin: 0;">
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"><q></q></td><td class="bg">
+<div class="toolBoxb">
+<h2></h2>
+<p>
+<input id="checkboxDualTooltip" onClick="javascript: setDualTooltipCookie();" type="checkbox">Enable Dual Item Tooltips</p>
+<div class="unpin-footer">
+<a class="unpin unpinpane" href="javascript: unsetCharCookie();"></a><a class="unpin-link" href="javascript: unsetCharCookie();">unpin this character</a>
+</div>
+</div>
+</td><td class="r"><q></q></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="global-nav">
+<a class="wowcom" href="http://www.worldofwarcraft.com"></a>
+<div id="arenaMenu"></div>
+</div>
+</div>
+<script type="text/javascript">
+//
+if (getcookie2("armory.cookieCharProfileUrl") !=0) {
+   showPin();
+if (getcookie2("armory.cookieDualTooltip") == 1)
+   document.getElementById('checkboxDualTooltip').checked = 1;
+} else {
+ 	hidePin();
+}
+//
+</script>
+<div id="replaceMain">
+<span style="display:none;">start</span>
+<div id="dataElement">
+<script type="text/javascript">
+
+var theClassId = 1;
+var theRaceId = 1;
+var theClassName = "Warrior";
+var theLevel = 13;
+
+var theRealmName = "Aszune";
+var theCharName = "Adries";
+
+</script>
+<div class="sub-head">
+<div id="divCharTabs">
+<div class="tabs">
+<div class="hide">
+<div class="select1">
+<ul>
+<li class="tab-left"></li>
+<li class="tab-content">
+<a class="active" href="character-sheet.xml?r=Aszune&amp;n=Adries">Character Sheet</a>
+</li>
+<li class="tab-right"></li>
+</ul>
+</div>
+<div class="select0">
+<ul>
+<li class="tab-left"></li>
+<li class="tab-content">
+<a class="active" href="character-reputation.xml?r=Aszune&amp;n=Adries">Reputation</a>
+</li>
+<li class="tab-right"></li>
+</ul>
+</div>
+<div class="select0">
+<ul>
+<li class="tab-left"></li>
+<li class="tab-content">
+<a class="active" href="character-skills.xml?r=Aszune&amp;n=Adries">Skills</a>
+</li>
+<li class="tab-right"></li>
+</ul>
+</div>
+<div class="select0">
+<ul>
+<li class="tab-left"></li>
+<li class="tab-content">
+<a class="active" href="character-talents.xml?r=Aszune&amp;n=Adries">Talents</a>
+</li>
+<li class="tab-right"></li>
+</ul>
+</div>
+<div class="select2" onMouseOut="hideTip();" onMouseOver="showTip('Clicking on this tab will take you to the Guilds section');">
+<ul>
+<li class="tab-left"></li>
+<li class="tab-content">
+<a class="active" href="guild-info.xml?r=Aszune&amp;n=The+Justice+League&amp;p=1">Guild</a>
+</li>
+<li class="tab-right"></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="parchment-top">
+<div class="parchment-content">
+<div class="mini-search-start-state" id="results-side-switch">
+<div class="list">
+<div class="player-side">
+<div class="tip" style="clear: left; position: relative; z-index: 99;">
+<table>
+<tr>
+<td class="tip-top-left"></td><td class="tip-top"></td><td class="tip-top-right"></td>
+</tr>
+<tr>
+<td class="tip-left"></td><td class="tip-bg">
+<div class="profile-wrapper">
+<div class="profile">
+<div class="faction-alliance">
+<div class="profile-left">
+<div class="profile-right">
+<div class="profile-content">
+<script type="text/javascript">
+	rightSideImage = "character";
+	changeRightSideImage(rightSideImage);
+	theCharUrl = "";	
+</script>
+<div class="profile-header">
+<div class="profile-avatar">
+<div class="profile-placeholder">
+<a class="avatar-position"><img src="images/portraits/wow-default/0-1-1.gif"></a>
+<p>
+<div id="level">
+<div id="leveltext" style="display:none;"></div>
+<script type="text/javascript">
+		var flashId="leveltext";
+		if ((is_safari && flashId=="flashback") || (is_linux && flashId=="flashback")){//kill the searchbox flash for safari or linux
+		   document.getElementById("searchFlash").innerHTML = '<div class="search-noflash"></div>';
+		}else
+			printFlash("leveltext", "/images/en_us/flash/level.swf", "transparent", "", "", "38", "38", "best", "/images/en_us/flash", "charLevel=13", "<div class=level-noflash>13<em>13</em></div>")
+		
+		</script>
+</div>
+</p>
+</div>
+</div>
+<div class="flash-profile" id="profile">
+<script type="text/javascript">
+	var guildUrl="guild-info.xml?r=Aszune&n=The+Justice+League&p=1";
+
+	if(is_ie && region == "KR")
+		guildUrl = unescape(guildUrl);//.replace(/&/g, "%26");
+</script>
+<div class="character-details">
+<div class="character-outer">
+<table>
+<tr>
+<td>
+<h1>
+<span style="font-size: 16px;"></span>
+</h1>
+<h2>Adries<span style="font-size: 16px; font-weight: normal"></span>
+</h2>
+<h3>The Justice League</h3>
+<h4>
+<span class="">Level&nbsp;</span><span class="">13&nbsp;</span><span class="">Human&nbsp;</span><span class="">Warrior</span>
+</h4>
+</td>
+</tr>
+</table>
+</div>
+<div class="character-clone">
+<table>
+<tr>
+<td>
+<h1>
+<span style="font-size: 16px; color: #fff7d2"></span>
+</h1>
+<h2>Adries<span style="font-size: 16px; font-weight: normal;  color: #fff7d2"></span>
+</h2>
+<h3>
+<a href="guild-info.xml?r=Aszune&amp;n=The+Justice+League&amp;p=1">The Justice League</a>
+</h3>
+<h4>
+<span class="">Level&nbsp;</span><span class="">13&nbsp;</span><span class="">Human&nbsp;</span><span class="">Warrior</span>
+</h4>
+</td>
+</tr>
+</table>
+</div>
+<div style="reldiv">
+<div style="position: absolute; margin: 0px 0 0 0px; width: 700px;">
+<a class="linksmallframe" href="http://forums.worldofwarcraft.com/board.html?forumId=6304584&amp;sid=1" onMouseOut="hideTip();" onMouseOver=" showTip(&quot;Clicking this link will take you to the Arena Tournament Forum&quot;);" target="_blank">
+<div class="smallframe-a"></div>
+<div class="smallframe-b">Aszune</div>
+<div class="smallframe-icon">
+<div class="reldiv">
+<div class="smallframe-realm"></div>
+</div>
+</div>
+<div class="smallframe-c"></div>
+</a><a class="linksmallframe" href="http://forums.worldofwarcraft.com/board.html?forumId=6304584&amp;sid=1" onMouseOut="hideTip();" onMouseOver=" showTip(&quot;Clicking this link will take you to the Arena Tournament Forum&quot;);" target="_blank">
+<div class="smallframe-a"></div>
+<div class="smallframe-b">Blackout</div>
+<div class="smallframe-icon">
+<div class="reldiv">
+<div class="smallframe-battlegroup"></div>
+</div>
+</div>
+<div class="smallframe-c"></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="parch-profile-banner" id="banner" style="margin-top: -7px!important;">
+<h1>Profile</h1>
+</div>
+<script type="text/javascript">
+
+
+		pinCharName = "Adries";		
+		pinRealmName = "Aszune";		
+		pinGuildName = "The Justice League";		
+		pinGuildUrl = "r=Aszune&n=The+Justice+League&p=1";		
+		pinFactionId = "0";		
+		pinRace = "Human";		
+		pinClassName = "Warrior";		
+	
+		pinTeam2Url = "";
+		pinTeam3Url = "";
+		pinTeam5Url = "";
+
+</script><script src="js/character/pinChar.js" type="text/javascript"></script><script src="js/character/functions.js" type="text/javascript"></script><script type="text/javascript">
+
+function strengthObject() {
+	this.base = "37";
+	this.effective = "41";
+	this.block = "2";
+	this.attack = "62";
+
+	this.diff = this.effective - this.base;
+}
+
+function agilityObject() {
+	this.base = "29";
+	this.effective = "29";
+	this.critHitPercent = "5.97";
+	this.attack = "-1";
+	this.armor = "58";
+	
+	this.diff = this.effective - this.base;
+}
+
+function staminaObject(base, effective, health, petBonus) {
+	this.base = "35";
+	this.effective = "36";
+	this.health = "180";
+	this.petBonus = "-1";
+
+	this.diff = this.effective - this.base;
+}
+
+function intellectObject() {
+	this.base = "21";
+	this.effective = "21";
+	this.mana = "-1";
+	this.critHitPercent = "-1.00";
+	this.petBonus = "-1";
+
+	this.diff = this.effective - this.base;
+}
+
+function spiritObject() {
+	this.base = "26";
+	this.effective = "26";
+	this.healthRegen = "9";
+	this.manaRegen = "-1";
+
+	this.diff = this.effective - this.base;
+}
+
+function armorObject() {
+	this.base = "863";
+	this.effective = "863";	
+	this.reductionPercent = "36.44";
+	this.petBonus = "-1";
+	
+	this.diff = this.effective - this.base;	
+}
+
+function resistancesObject() {
+	this.arcane = new resistArcaneObject("0", "-1");
+	this.nature = new resistNatureObject("0", "-1");	
+	this.fire = new resistFireObject("0", "-1");
+	this.frost = new resistFrostObject("0", "-1");
+	this.shadow = new resistShadowObject("0", "-1");
+}
+
+function meleeMainHandWeaponSkillObject() {
+	this.value = "0";
+	this.rating = "0";
+	this.additional = "0";
+	this.percent = "0.00";	
+}
+
+function meleeOffHandWeaponSkillObject() {
+	this.value = "";
+	this.rating = "";
+}
+
+
+function meleeMainHandDamageObject() {
+	this.speed = "2.50";
+	this.min = "35";
+	this.max = "49";
+	this.percent = "0";	
+	this.dps = "16.6";	
+
+	if (this.percent > 0)
+		this.effectiveColor = "class = 'mod'";
+	else if (this.percent < 0)
+		this.effectiveColor = "class = 'moddown'";
+
+}
+
+function meleeOffHandDamageObject() {
+	this.speed = "2.00";
+	this.min = "0";
+	this.max = "0";
+	this.percent = "0";
+	this.dps = "0.0";	
+}
+
+
+function meleeMainHandSpeedObject() {
+	this.value = "2.50";
+	this.hasteRating = "0";
+	this.hastePercent = "0.00";
+}
+
+function meleeOffHandSpeedObject() {
+	this.value = "2.00";
+	this.hasteRating = "0";
+	this.hastePercent = "0.00";
+}
+
+function meleePowerObject() {
+	this.base = "101";
+	this.effective = "101";	
+	this.increasedDps = "7.0";
+	
+	this.diff = this.effective - this.base;
+}
+
+function meleeHitRatingObject() {
+	this.value = "0";
+	this.increasedHitPercent = "0.00";
+}
+
+function meleeCritChanceObject() {
+	this.percent = "6.93";
+	this.rating = "0";
+	this.plusPercent = "0.00";	
+}
+
+function rangedWeaponSkillObject() {
+	this.value = 61;
+	this.rating = 0;
+}
+
+function rangedDamageObject() {
+	this.speed = 2.27;
+	this.min = 21;
+	this.max = 25;	
+	this.dps = 10.1;
+	this.percent = 0;
+
+	if (this.percent > 0)
+		this.effectiveColor = "class = 'mod'";
+	else if (this.percent < 0)
+		this.effectiveColor = "class = 'moddown'";
+
+}
+
+function rangedSpeedObject() {
+	this.value = 2.27;
+	this.hasteRating = 0;
+	this.hastePercent = 0.00;	
+}
+
+function rangedPowerObject() {
+	this.base = 32;
+	this.effective = 32;
+	this.increasedDps = 2.0;	
+	this.petAttack = -1.00;	
+	this.petSpell = -1.00;		
+	
+	this.diff = this.effective - this.base;
+}
+
+function rangedHitRatingObject() {
+	this.value = 0;
+	this.increasedHitPercent = 0.00;
+}
+
+function rangedCritChanceObject() {
+	this.percent = 5.81;
+	this.rating = 0;
+	this.plusPercent = 0.00;
+}
+
+function spellBonusDamageObject() {
+	this.holy = 0;
+	this.arcane = 0;
+	this.fire = 0;
+	this.nature = 0;
+	this.frost = 0;
+	this.shadow = 0;
+	this.petBonusAttack = -1;
+	this.petBonusDamage = -1;
+	this.petBonusFromType = "";
+	
+	this.value = this.holy;
+	if (this.value > this.arcane)
+		this.value = this.arcane;
+	if (this.value > this.fire)
+		this.value = this.fire;
+	if (this.value > this.nature)
+		this.value = this.nature;	
+	if (this.value > this.frost)
+		this.value = this.frost;
+	if (this.value > this.shadow)
+		this.value = this.shadow;
+}
+
+function spellBonusHealingObject() {
+	this.value = 0;
+}
+
+function spellHitRatingObject() {
+	this.value = 0;
+	this.increasedHitPercent = 0.00;
+}
+
+function spellCritChanceObject() {
+	this.rating = 0;
+	this.holy = 0.00;
+	this.arcane = 0.00;
+	this.fire = 0.00;
+	this.nature = 0.00;
+	this.frost = 0.00;
+	this.shadow = 0.00;
+
+	this.percent = this.holy;
+	if (this.percent > this.arcane)
+		this.percent = this.arcane;
+	if (this.percent > this.fire)
+		this.percent = this.fire;
+	if (this.percent > this.nature)
+		this.percent = this.nature;	
+	if (this.percent > this.frost)
+		this.percent = this.frost;
+	if (this.percent > this.shadow)
+		this.percent = this.shadow;
+
+}
+
+function spellPenetrationObject() {
+	this.value = 0;
+}
+
+function spellManaRegenObject() {
+	this.casting = 0.00;
+	this.notCasting = 0.00;
+}
+
+function defensesArmorObject() {
+	this.base = 863;
+	this.effective = 863;
+	this.percent = 36.44;	
+	this.petBonus = -1;	
+	
+	this.diff = this.effective - this.base;
+}
+
+function defensesDefenseObject() {
+	this.rating = 0;	
+	this.plusDefense = 0;	
+	this.increasePercent = 0.00;	
+	this.decreasePercent = 0.00;	
+	this.value = 63.00 + this.plusDefense;	
+}
+
+function defensesDodgeObject() {
+	this.percent = 4.78;	
+	this.rating = 0;	
+	this.increasePercent = 0.00;
+}
+
+function defensesParryObject() {
+	this.percent = 6.92;	
+	this.rating = 0;	
+	this.increasePercent = 0.00;
+}
+
+function defensesBlockObject() {
+	this.percent = 6.92;	
+	this.rating = 5;	
+	this.increasePercent = 2.00;
+}
+
+function defensesResilienceObject() {
+	this.value = 0.00;	
+	this.hitPercent = 0.00;	
+	this.damagePercent = 0.00;
+}
+
+
+var theCharacter = new characterObject();
+
+var theCharUrl = "r=Aszune&n=Adries";
+
+</script><script src="js/en_us/character-sheet.js" type="text/javascript"></script><script type="text/javascript">
+
+  var itemsArray = new Array;
+  
+  
+    itemsArray[3]  = [38  , "inv_shirt_05", "0", "0"];
+  
+    itemsArray[4]  = [3471  , "inv_chest_chain", "59", "65"];
+  
+    itemsArray[5]  = [6509  , "inv_belt_22", "19", "20"];
+  
+    itemsArray[6]  = [2852  , "inv_pants_03", "40", "45"];
+  
+    itemsArray[7]  = [9759  , "inv_boots_plate_01", "30", "35"];
+  
+    itemsArray[8]  = [6507  , "inv_bracer_14", "19", "20"];
+  
+    itemsArray[9]  = [3472  , "inv_gauntlets_04", "19", "20"];
+  
+    itemsArray[14]  = [1421  , "inv_misc_cape_14", "0", "0"];
+  
+    itemsArray[15]  = [3489  , "inv_throwingaxe_01", "46", "50"];
+  
+    itemsArray[16]  = [6559  , "inv_shield_09", "53", "55"];
+  
+    itemsArray[17]  = [15807  , "inv_weapon_crossbow_02", "30", "30"];
+  
+    itemsArray[18]  = [36941  , "inv_shirt_guildtabard_01", "0", "0"];
+  
+    itemsArray[-1]  = [2512  , "inv_ammo_arrow_02", "0", "0"];
+  </script>
+<div class="profile-master" style="height: 500px;">
+<div class="stack1">
+<img class="ieimg" height="1" src="images/pixel.gif" width="1"><div class="items-left">
+<ul>
+<li>
+<img id="slot0x" src=""><a class="thisTip" href="javascript: return false;" id="slotOver0x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.head, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('0');" onMouseOver="javascript: mouseOverArrow(items.head.id, '0');"></b>
+<div id="flyOver0x" onMouseOut="javascript: mouseOutArrow('0');" onMouseOver="javascript: mouseOverUpgradeBox('0');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot1x" src=""><a class="thisTip" href="javascript: return false;" id="slotOver1x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.neck, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('1');" onMouseOver="javascript: mouseOverArrow(items.neck.id, '1');"></b>
+<div id="flyOver1x" onMouseOut="javascript: mouseOutArrow('1');" onMouseOver="javascript: mouseOverUpgradeBox('1');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot2x" src=""><a class="thisTip" href="javascript: return false;" id="slotOver2x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.shoulders, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('2');" onMouseOver="javascript: mouseOverArrow(items.shoulders.id, '2');"></b>
+<div id="flyOver2x" onMouseOut="javascript: mouseOutArrow('2');" onMouseOver="javascript: mouseOverUpgradeBox('2');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot14x" src="images/icons/51x51/inv_misc_cape_14.jpg"><a class="thisTip" href="item-info.xml?i=1421" id="slotOver14x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.back, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('14');" onMouseOver="javascript: mouseOverArrow(items.back.id, '14');"></b>
+<div id="flyOver14x" onMouseOut="javascript: mouseOutArrow('14');" onMouseOver="javascript: mouseOverUpgradeBox('14');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=1421">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot4x" src="images/icons/51x51/inv_chest_chain.jpg"><a class="thisTip" href="item-info.xml?i=3471" id="slotOver4x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.chest, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('4');" onMouseOver="javascript: mouseOverArrow(items.chest.id, '4');"></b>
+<div id="flyOver4x" onMouseOut="javascript: mouseOutArrow('4');" onMouseOver="javascript: mouseOverUpgradeBox('4');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=3471">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li class="noUpgrade">
+<img id="slot3x" src="images/icons/51x51/inv_shirt_05.jpg"><a class="thisTip" href="item-info.xml?i=38" id="slotOver3x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.shirt, theCharUrl)"></a>
+</li>
+<li class="noUpgrade">
+<img id="slot18x" src="images/icons/51x51/inv_shirt_guildtabard_01.jpg"><a class="thisTip" href="item-info.xml?i=36941" id="slotOver18x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.tabard, theCharUrl)"></a>
+</li>
+<li>
+<img id="slot8x" src="images/icons/51x51/inv_bracer_14.jpg"><a class="thisTip" href="item-info.xml?i=6507" id="slotOver8x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.wrist, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('8');" onMouseOver="javascript: mouseOverArrow(items.wrist.id, '8');"></b>
+<div id="flyOver8x" onMouseOut="javascript: mouseOutArrow('8');" onMouseOver="javascript: mouseOverUpgradeBox('8');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=6507">Find an Upgrade</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="items-right">
+<ul>
+<li>
+<img id="slot9x" src="images/icons/51x51/inv_gauntlets_04.jpg"><a class="thisTip" href="item-info.xml?i=3472" id="slotOver9x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.hands, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('9');" onMouseOver="javascript: mouseOverArrow(items.hands.id, '9');"></b>
+<div id="flyOver9x" onMouseOut="javascript: mouseOutArrow('9');" onMouseOver="javascript: mouseOverUpgradeBox('9');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=3472">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot5x" src="images/icons/51x51/inv_belt_22.jpg"><a class="thisTip" href="item-info.xml?i=6509" id="slotOver5x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.waist, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('5');" onMouseOver="javascript: mouseOverArrow(items.waist.id, '5');"></b>
+<div id="flyOver5x" onMouseOut="javascript: mouseOutArrow('5');" onMouseOver="javascript: mouseOverUpgradeBox('5');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=6509">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot6x" src="images/icons/51x51/inv_pants_03.jpg"><a class="thisTip" href="item-info.xml?i=2852" id="slotOver6x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.legs, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('6');" onMouseOver="javascript: mouseOverArrow(items.legs.id, '6');"></b>
+<div id="flyOver6x" onMouseOut="javascript: mouseOutArrow('6');" onMouseOver="javascript: mouseOverUpgradeBox('6');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=2852">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot7x" src="images/icons/51x51/inv_boots_plate_01.jpg"><a class="thisTip" href="item-info.xml?i=9759" id="slotOver7x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.feet, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('7');" onMouseOver="javascript: mouseOverArrow(items.feet.id, '7');"></b>
+<div id="flyOver7x" onMouseOut="javascript: mouseOutArrow('7');" onMouseOver="javascript: mouseOverUpgradeBox('7');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=9759">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot10x" src=""><a class="thisTip" href="javascript: return false;" id="slotOver10x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.finger1, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('10');" onMouseOver="javascript: mouseOverArrow(items.finger1.id, '10');"></b>
+<div id="flyOver10x" onMouseOut="javascript: mouseOutArrow('10');" onMouseOver="javascript: mouseOverUpgradeBox('10');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot11x" src=""><a class="thisTip" href="javascript: return false;" id="slotOver11x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.finger2, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('11');" onMouseOver="javascript: mouseOverArrow(items.finger2.id, '11');"></b>
+<div id="flyOver11x" onMouseOut="javascript: mouseOutArrow('11');" onMouseOver="javascript: mouseOverUpgradeBox('11');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot12x" src=""><a class="thisTip" href="javascript: return false;" id="slotOver12x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.trinket1, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('12');" onMouseOver="javascript: mouseOverArrow(items.trinket1.id, '12');"></b>
+<div id="flyOver12x" onMouseOut="javascript: mouseOutArrow('12');" onMouseOver="javascript: mouseOverUpgradeBox('12');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot13x" src=""><a class="thisTip" href="javascript: return false;" id="slotOver13x" onMouseOut="hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.trinket2, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('13');" onMouseOver="javascript: mouseOverArrow(items.trinket2.id, '13');"></b>
+<div id="flyOver13x" onMouseOut="javascript: mouseOutArrow('13');" onMouseOver="javascript: mouseOverUpgradeBox('13');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=">Find an Upgrade</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="buffs">
+<ul></ul>
+</div>
+<div class="debuffs">
+<ul></ul>
+</div>
+<div class="spec">
+<img class="ieimg" height="1" src="images/pixel.gif" width="1"><em class="ptl"></em><em class="ptr"></em><em class="pbl"></em><em class="pbr"></em>
+<h4>Talent Specialization:</h4>
+<div class="spec-wrapper">
+<div style="position:absolute; left:15px;">
+<img id="talentSpecImage"></div>
+<h4>
+<a href="character-talents.xml?r=Aszune&amp;n=Adries">
+<div id="replaceTalentSpecText"></div>
+</a>
+</h4>
+<span>3 / 1 / 0</span>
+</div>
+<span style="display:none;">start</span><script type="text/javascript">
+
+	var talentsTreeArray = new Array;
+	talentsTreeArray[0] = [1, 3, "Arms"];
+	talentsTreeArray[1] = [2, 1, "Fury"];
+	talentsTreeArray[2] = [3, 0, "Protection"];
+</script>
+</div>
+<div class="resists">
+<em class="ptl"></em><em class="ptr"></em><em class="pbl"></em><em class="pbr"></em>
+<h4>Resistances:</h4>
+<ul>
+<li class="arcane" onMouseOut="hideTip();" onMouseOver="showTip(theText.resistances.arcane.tooltip);">
+<b>0</b><span id="spanResistArcane">0</span>
+<h4>
+<a>Arcane</a>
+</h4>
+</li>
+<li class="fire" onMouseOut="hideTip();" onMouseOver="showTip(theText.resistances.fire.tooltip);">
+<b>0</b><span id="spanResistFire">0</span>
+<h4>
+<a>Fire</a>
+</h4>
+</li>
+<li class="nature" onMouseOut="hideTip();" onMouseOver="showTip(theText.resistances.nature.tooltip);">
+<b>0</b><span id="spanResistNature">0</span>
+<h4>
+<a>Nature</a>
+</h4>
+</li>
+<li class="frost" onMouseOut="hideTip();" onMouseOver="showTip(theText.resistances.frost.tooltip);">
+<b>0</b><span id="spanResistFrost">0</span>
+<h4>
+<a>Frost</a>
+</h4>
+</li>
+<li class="shadow" onMouseOut="hideTip();" onMouseOver="showTip(theText.resistances.shadow.tooltip);">
+<b>0</b><span id="spanResistShadow">0</span>
+<h4>
+<a>Shadow</a>
+</h4>
+</li>
+</ul>
+</div>
+<div class="profs">
+<em class="ptl"></em><em class="ptr"></em><em class="pbl"></em><em class="pbr"></em>
+<h4>Primary Professions:</h4>
+<div class="prof1">
+<div class="profImage">
+<img src="images/icons/professions/blacksmithing-sm.gif"></div>
+<h4>
+<a href="character-skills.xml?r=Aszune&amp;n=Adries">Blacksmithing</a>
+</h4>
+<div class="bar-container">
+<img class="ieimg" height="1" src="images/pixel.gif" width="1"><b style=" width: 42.666666666666664%"></b><span>64 / 150</span>
+</div>
+</div>
+<div class="prof1">
+<div class="profImage">
+<img src="images/icons/professions/mining-sm.gif"></div>
+<h4>
+<a href="character-skills.xml?r=Aszune&amp;n=Adries">Mining</a>
+</h4>
+<div class="bar-container">
+<img class="ieimg" height="1" src="images/pixel.gif" width="1"><b style=" width: 51.333333333333336%"></b><span>77 / 150</span>
+</div>
+</div>
+</div>
+</div>
+<div class="stack2">
+<em class="ptl"></em><em class="ptr"></em><em class="pbl"></em><em class="pbr"></em>
+<div class="health-stat">
+<h4>Health:</h4>
+<p>
+<span>298</span>
+</p>
+</div>
+<div class="rage-stat">
+<h4>Rage:</h4>
+<p>
+<span>100</span>
+</p>
+</div>
+</div>
+<div class="stack3">
+<script type="text/javascript">
+
+    var varOverLeft = 0;
+
+
+</script>
+<div class="dropdown1" onMouseOut="javascript: varOverLeft = 0;" onMouseOver="javascript: varOverLeft = 1;">
+<a class="profile-stats" href="javascript: document.formDropdownLeft.dummyLeft.focus();" id="displayLeft">Base Stats</a>
+</div>
+<div style="position: relative;">
+<div style="position: absolute;">
+<form id="formDropdownLeft" name="formDropdownLeft" style="height: 0px;">
+<input id="dummyLeft" onBlur="javascript: if(!varOverLeft) document.getElementById('dropdownHiddenLeft').style.display='none';" onFocus="javascript: dropdownMenuToggle('dropdownHiddenLeft');" size="2" style="position: relative; left: -5000px;" type="button">
+</form>
+</div>
+</div>
+<div class="drop-stats" id="dropdownHiddenLeft" onMouseOut="javascript: varOverLeft = 0;" onMouseOver="javascript: varOverLeft = 1;" style="display: none; z-index: 99999;">
+<div class="tooltip">
+<table>
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"></td><td class="bg">
+<ul>
+<li>
+<a href="#" onClick="changeStats('Left', replaceStringBaseStats, 'BaseStats', baseStatsDisplay); return false;">Base Stats<img class="checkmark" id="checkLeftBaseStats" src="images/icons/icon-check.gif" style="visibility: visible;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Left', replaceStringMelee, 'Melee', meleeDisplay); return false;">Melee<img class="checkmark" id="checkLeftMelee" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Left', replaceStringRanged, 'Ranged', rangedDisplay); return false;">Ranged<img class="checkmark" id="checkLeftRanged" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Left', replaceStringSpell, 'Spell', spellDisplay); return false;">Spell<img class="checkmark" id="checkLeftSpell" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Left', replaceStringDefenses, 'Defenses', defensesDisplay); return false;">Defense<img class="checkmark" id="checkLeftDefenses" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+</ul>
+</td><td class="r"></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+</div>
+</div>
+<script type="text/javascript">
+
+    var varOverRight = 0;
+
+
+</script>
+<div class="dropdown2" onMouseOut="javascript: varOverRight = 0;" onMouseOver="javascript: varOverRight = 1;">
+<a class="profile-stats" href="javascript: document.formDropdownRight.dummyRight.focus();" id="displayRight">Base Stats</a>
+</div>
+<div style="position: relative;">
+<div style="position: absolute;">
+<form id="formDropdownRight" name="formDropdownRight" style="height: 0px;">
+<input id="dummyRight" onBlur="javascript: if(!varOverRight) document.getElementById('dropdownHiddenRight').style.display='none';" onFocus="javascript: dropdownMenuToggle('dropdownHiddenRight');" size="2" style="position: relative; left: -5000px;" type="button">
+</form>
+</div>
+</div>
+<div class="drop-stats" id="dropdownHiddenRight" onMouseOut="javascript: varOverRight = 0;" onMouseOver="javascript: varOverRight = 1;" style="display: none; z-index: 9999999; left: 190px;">
+<div class="tooltip">
+<table>
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"></td><td class="bg">
+<ul>
+<li>
+<a href="#" onClick="changeStats('Right', replaceStringBaseStats, 'BaseStats', baseStatsDisplay); return false;">Base Stats<img class="checkmark" id="checkRightBaseStats" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Right', replaceStringMelee, 'Melee', meleeDisplay); return false;">Melee<img class="checkmark" id="checkRightMelee" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Right', replaceStringRanged, 'Ranged', rangedDisplay); return false;">Ranged<img class="checkmark" id="checkRightRanged" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Right', replaceStringSpell, 'Spell', spellDisplay); return false;">Spell<img class="checkmark" id="checkRightSpell" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+<li>
+<a href="#" onClick="changeStats('Right', replaceStringDefenses, 'Defenses', defensesDisplay); return false;">Defense<img class="checkmark" id="checkRightDefenses" src="images/icons/icon-check.gif" style="visibility: hidden;"></a>
+</li>
+</ul>
+</td><td class="r"></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="stats1">
+<em class="ptl"></em><em class="ptr"></em><em class="pbl"></em><em class="pbr"></em>
+<div class="character-stats">
+<div id="replaceStatsLeft"></div>
+</div>
+</div>
+<div class="stats2">
+<em class="ptl"></em><em class="ptr"></em><em class="pbl"></em><em class="pbr"></em>
+<div class="character-stats">
+<div id="replaceStatsRight"></div>
+<script src="js/character/textObjects.js" type="text/javascript"></script>
+</div>
+</div>
+</div>
+<div class="stack4">
+<div class="items-bot">
+<ul>
+<li>
+<img id="slot15x" src="images/icons/51x51/inv_throwingaxe_01.jpg"><a class="thisTip" href="item-info.xml?i=3489" id="slotOver15x" onMouseOut="javascript: hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.mainHand, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('15');" onMouseOver="javascript: mouseOverArrow(items.mainHand.id, '15');"></b>
+<div id="flyOver15x" onMouseOut="javascript: mouseOutArrow('15');" onMouseOver="javascript: mouseOverUpgradeBox('15');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=3489">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<img id="slot16x" src="images/icons/51x51/inv_shield_09.jpg"><a class="thisTip" href="item-info.xml?i=6559" id="slotOver16x" onMouseOut="javascript: hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.offHand, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('16');" onMouseOver="javascript: mouseOverArrow(items.offHand.id, '16');"></b>
+<div id="flyOver16x" onMouseOut="javascript: mouseOutArrow('16');" onMouseOver="javascript: mouseOverUpgradeBox('16');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=6559">Find an Upgrade</a>
+</div>
+</div>
+</li>
+<li>
+<u class=""><img id="slot17x" src="images/icons/51x51/inv_weapon_crossbow_02.jpg"></u><a class="thisTip" href="item-info.xml?i=15807" id="slotOver17x" onMouseOut="javascript: hideTip();" onMouseOver="javascript: loadTooltip(textLoading, items.ranged, theCharUrl)"></a><b class="hitBoxArrow" onMouseOut="javascript: mouseOutArrow('17');" onMouseOver="javascript: mouseOverArrow(items.ranged.id, '17');"></b>
+<div id="flyOver17x" onMouseOut="javascript: mouseOutArrow('17');" onMouseOver="javascript: mouseOverUpgradeBox('17');" style="visibility: hidden;">
+<div class="fly-horz" id="flyoutMenu">
+<a class="upgrd" href="search.xml?searchType=items&amp;pr=Aszune&amp;pn=Adries&amp;pi=15807">Find an Upgrade</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<script type="text/javascript">
+  var items = new itemsObject();
+</script>
+</div>
+<div class="lastModified">
+<span>Last Updated:</span>&nbsp;<strong>August 13, 2008</strong>
+</div>
+</div>
+<div class="bonus-stats" style="display: none;">
+<table class="deco-frame">
+<thead>
+<tr>
+<td class="sl"></td><td class="ct st"></td><td class="sr"></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="sl"><b><em class="port"></em></b></td><td class="ct">
+<table>
+<tr>
+<td class="s-top-left"></td><td class="s-top"></td><td class="s-top-right"></td>
+</tr>
+<tr>
+<td class="s-left">
+<div class="shim stable"></div>
+</td><td class="s-bg">
+<div class="bonus-stats-content">
+<div>
+<em class="b-title"></em>
+<div class="achievements external">
+<div style="clear:both;"></div>
+</div>
+</div>
+</div>
+</td><td class="s-right">
+<div class="shim stable"></div>
+</td>
+</tr>
+<tr>
+<td class="s-bot-left"></td><td class="s-bot"></td><td class="s-bot-right"></td>
+</tr>
+</table>
+</td><td class="sr"><b><em class="star"></em></b></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="sl"></td><td align="center" class="ct sb"><b><em class="foot"></em></b></td><td class="sr"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td><td class="tip-right"></td>
+</tr>
+<tr>
+<td class="tip-bot-left"></td><td class="tip-bot"></td><td class="tip-bot-right"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="miniSearchElement">
+<script type="text/javascript">
+
+
+	//		  
+
+
+
+function value(a,b) {
+a = a[globalSort[0]] + a[0][0];
+b = b[globalSort[0]] + b[0][0];
+return a == b ? 0 : (a < b ? -1 : 1)
+}
+
+function valueAs(a,b) {
+a = a[globalSort[0]] + a[0][0];
+b = b[globalSort[0]] + b[0][0];
+return a == b ? 0 : (a < b ? 1 : -1)
+}
+
+function sortNumber(a, b) {
+return b[globalSort[0]][0] - a[globalSort[0]][0];
+}
+
+function sortNumberAs(a, b) {
+return a[globalSort[0]][0] - b[globalSort[0]][0];
+}
+
+var globalSort = new Array;
+
+function sortSearch2(whichElement) {
+
+
+if (whichElement < 0)
+	whichElement = 0 - whichElement;
+globalSort[0] = whichElement;
+globalSort[1] = getcookie2("cookieLeftSortUD");
+
+
+
+  if ((typeof rightArray[0][whichElement][0]) == 'string') {
+    sortAs = valueAs;
+	sortDe = value;
+  } else {
+    sortAs = sortNumberAs;
+	sortDe = sortNumber;
+  }
+
+if (globalSort[1] == 'u')
+    rightArray.sort(eval(sortAs));
+else
+    rightArray.sort(eval(sortDe));
+
+
+}
+
+
+	//
+</script><span style="display:none;">start</span>
+<link href="css/mini-search-expand.css" media="screen, projection" rel="stylesheet" type="text/css">
+<div class="results-side">
+<div class="results-list">
+<div class="result-banner">
+<a class="search-default" href="javascript: miniSearchPanelInstance.revertToDefault()" id="search-defaulter" onmouseout="hideTip()" onmouseover="showTip('Revert to Default Listing')"></a>
+<h3 class="results-header">
+<em>Guild Roster for "<i>The Justice League</i>"</em>
+</h3>
+</div>
+<div class="division">
+<a class="left-button" href="#" onClick="resultsSideLeft(&quot;guild-info.xml?&quot;); return false;" onmouseout="hideTip()" onmouseover="showTip('Expand the Guild Listing')"><img height="1" src="images/pixel.gif" width="1"></a><a class="right-button" href="javascript: resultsSideRight()" onmouseout="hideTip()" onmouseover="showTip('Collapse the Guild Listing')"><img height="1" src="images/pixel.gif" width="1"></a>
+</div>
+<div class="ps">
+<div class="ps-bot">
+<div class="ps-top">
+<div class="data">
+<div class="parch-search">
+<input id="inputFilter" onKeyUp="javascript: filterRightArray(this.value)" onblur="if (this.value=='') this.value='Search Guild Roster'" onfocus="this.value=''" size="16" type="text" value="Search Guild Roster">
+</div>
+<script type="text/javascript">
+
+	var globalCurChar = "Adries";
+
+	//		  
+		  var rightArray = new Array();
+	var filteredArray = new Array();		  
+		  var raC = 0;
+		  var filterPage = 1;
+		  var totalFilterPages = 0;
+
+	function returnMid(i, theTrunc) {
+	var theString = "";
+				theString = '<tr';
+				if (rightArray[i][1] == globalCurChar) {
+					theString += ' class = "data2"';
+				}
+				theString += '><td><div><p></p></div></td><td><q><a';
+				if (rightArray[i][1].length >= theTrunc)
+					theString += ' onmouseout="hideTip()" onMouseOver = "showTip(&quot;'+ rightArray[i][1] +'&quot;)"';
+				theString +=' href = "character-sheet.xml?'+ rightArray[i][0][1] +'">';
+				theString += truncateString(rightArray[i][1], theTrunc);
+				theString += '</a></q></td><td width="20"><img onmouseout="hideTip()" onMouseOver = "showTip(&quot;'+ rightArray[i][5] +'&quot;)"';
+				theString += ' class="ci" src="images/icons/race/'+ rightArray[i][2] +'-'+ rightArray[i][3] +'.gif" /></td>';
+				theString += '<td width="20"><img onmouseout="hideTip()" onMouseOver = "showTip(&quot;'+ rightArray[i][6] +'&quot;)" class="ci" src="images/icons/class/'+ rightArray[i][4] +'.gif" /></td><td align="right"><div><b></b></div></td></tr>';
+				return theString;
+	}
+
+	function returnMid2(i, theTrunc) {
+	var theString = "";
+				theString = '<tr';
+				if (filteredArray[i][1] == globalCurChar) {
+					theString += ' class = "data2"';
+				}
+				theString += '><td><div><p></p></div></td><td><q><a';
+				if (filteredArray[i][1].length >= theTrunc)
+					theString += ' onmouseout="hideTip()" onMouseOver = "showTip(&quot;'+ filteredArray[i][1] +'&quot;)"';
+				theString +=' href = "character-sheet.xml?'+ filteredArray[i][0][1] +'">';
+				theString += truncateString(filteredArray[i][1], theTrunc);
+				theString += '</a></q></td><td width="20"><img onmouseout="hideTip()" onMouseOver = "showTip(&quot;'+ filteredArray[i][5] +'&quot;)"';
+				theString += ' class="ci" src="images/icons/race/'+ filteredArray[i][2] +'-'+ filteredArray[i][3] +'.gif" /></td>';
+				theString += '<td width="20"><img onmouseout="hideTip()" onMouseOver = "showTip(&quot;'+ filteredArray[i][6] +'&quot;)" class="ci" src="images/icons/class/'+ filteredArray[i][4] +'.gif" /></td><td align="right"><div><b></b></div></td></tr>';
+				return theString;
+	}
+
+	//
+
+	
+	  rightArray[raC] = [["Shingouki", "r=Aszune&n=Shingouki"], "Shingouki", "4", "0", "1", text4race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Rasunta", "r=Aszune&n=Rasunta"], "Rasunta", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Aimedshot", "r=Aszune&n=Aimedshot"], "Aimedshot", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Hoarder", "r=Aszune&n=Hoarder"], "Hoarder", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Mazzy", "r=Aszune&n=Mazzy"], "Mazzy", "11", "1", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Buffen", "r=Aszune&n=Buffen"], "Buffen", "11", "1", "1", text11race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Mallety", "r=Aszune&n=Mallety"], "Mallety", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Friza", "r=Aszune&n=Friza"], "Friza", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Gnio", "r=Aszune&n=Gnio"], "Gnio", "7", "0", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Tyshan", "r=Aszune&n=Tyshan"], "Tyshan", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Rea", "r=Aszune&n=Rea"], "Rea", "1", "1", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Delfius", "r=Aszune&n=Delfius"], "Delfius", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Carver", "r=Aszune&n=Carver"], "Carver", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Alk", "r=Aszune&n=Alk"], "Alk", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Zumargal", "r=Aszune&n=Zumargal"], "Zumargal", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Reimimneae", "r=Aszune&n=Reimimneae"], "Reimimneae", "3", "1", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Drzoidburg", "r=Aszune&n=Drzoidburg"], "Drzoidburg", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Goron", "r=Aszune&n=Goron"], "Goron", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Wildkiller", "r=Aszune&n=Wildkiller"], "Wildkiller", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Kolroten", "r=Aszune&n=Kolroten"], "Kolroten", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Aineagh", "r=Aszune&n=Aineagh"], "Aineagh", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Kaankaankaan", "r=Aszune&n=Kaankaankaan"], "Kaankaankaan", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Tessmiles", "r=Aszune&n=Tessmiles"], "Tessmiles", "1", "1", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Lemparda", "r=Aszune&n=Lemparda"], "Lemparda", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Oscard", "r=Aszune&n=Oscard"], "Oscard", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Titanz", "r=Aszune&n=Titanz"], "Titanz", "11", "0", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Federator", "r=Aszune&n=Federator"], "Federator", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Narvik", "r=Aszune&n=Narvik"], "Narvik", "3", "0", "5", text3race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Nernis", "r=Aszune&n=Nernis"], "Nernis", "4", "1", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Milez", "r=Aszune&n=Milez"], "Milez", "1", "0", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Beardudden", "r=Aszune&n=Beardudden"], "Beardudden", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Aladrais", "r=Aszune&n=Aladrais"], "Aladrais", "4", "1", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Lilenglish", "r=Aszune&n=Lilenglish"], "Lilenglish", "11", "0", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Rhefire", "r=Aszune&n=Rhefire"], "Rhefire", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Jayni", "r=Aszune&n=Jayni"], "Jayni", "1", "1", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Brinkley", "r=Aszune&n=Brinkley"], "Brinkley", "1", "1", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Salenor", "r=Aszune&n=Salenor"], "Salenor", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Corra", "r=Aszune&n=Corra"], "Corra", "3", "1", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Miladin", "r=Aszune&n=Miladin"], "Miladin", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Shelter", "r=Aszune&n=Shelter"], "Shelter", "7", "0", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Calfusionace", "r=Aszune&n=Calfusionace"], "Calfusionace", "1", "0", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Dreadmek", "r=Aszune&n=Dreadmek"], "Dreadmek", "7", "0", "1", text7race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Wolfdreamer", "r=Aszune&n=Wolfdreamer"], "Wolfdreamer", "11", "0", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Pvpmage", "r=Aszune&n=Pvpmage"], "Pvpmage", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Mattador", "r=Aszune&n=Mattador"], "Mattador", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Leedsutdboy", "r=Aszune&n=Leedsutdboy"], "Leedsutdboy", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Callee", "r=Aszune&n=Callee"], "Callee", "7", "0", "4", text7race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Lightningz", "r=Aszune&n=Lightningz"], "Lightningz", "11", "1", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Lowgun", "r=Aszune&n=Lowgun"], "Lowgun", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Fornorway", "r=Aszune&n=Fornorway"], "Fornorway", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Benjie", "r=Aszune&n=Benjie"], "Benjie", "7", "0", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Rhp", "r=Aszune&n=Rhp"], "Rhp", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Macavely", "r=Aszune&n=Macavely"], "Macavely", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Pwrlock", "r=Aszune&n=Pwrlock"], "Pwrlock", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Pancon", "r=Aszune&n=Pancon"], "Pancon", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Wolfhammer", "r=Aszune&n=Wolfhammer"], "Wolfhammer", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Killmeplenty", "r=Aszune&n=Killmeplenty"], "Killmeplenty", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Devaan", "r=Aszune&n=Devaan"], "Devaan", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Runtreasif", "r=Aszune&n=Runtreasif"], "Runtreasif", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Drot", "r=Aszune&n=Drot"], "Drot", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Dwailin", "r=Aszune&n=Dwailin"], "Dwailin", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Slup", "r=Aszune&n=Slup"], "Slup", "7", "1", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Tonage", "r=Aszune&n=Tonage"], "Tonage", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Silverwind", "r=Aszune&n=Silverwind"], "Silverwind", "4", "1", "1", text4race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Vxjupiterxv", "r=Aszune&n=Vxjupiterxv"], "Vxjupiterxv", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Lythos", "r=Aszune&n=Lythos"], "Lythos", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Bimwick", "r=Aszune&n=Bimwick"], "Bimwick", "7", "0", "1", text7race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Xeryn", "r=Aszune&n=Xeryn"], "Xeryn", "4", "0", "1", text4race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Lonesniper", "r=Aszune&n=Lonesniper"], "Lonesniper", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Rexil", "r=Aszune&n=Rexil"], "Rexil", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Zamoarmani", "r=Aszune&n=Zamoarmani"], "Zamoarmani", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Araithar", "r=Aszune&n=Araithar"], "Araithar", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Apoku", "r=Aszune&n=Apoku"], "Apoku", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Liete", "r=Aszune&n=Liete"], "Liete", "11", "1", "2", text11race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Hosky", "r=Aszune&n=Hosky"], "Hosky", "1", "0", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Dao", "r=Aszune&n=Dao"], "Dao", "11", "0", "1", text11race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Dentom", "r=Aszune&n=Dentom"], "Dentom", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Agniraj", "r=Aszune&n=Agniraj"], "Agniraj", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Guthrum", "r=Aszune&n=Guthrum"], "Guthrum", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Gladiatores", "r=Aszune&n=Gladiatores"], "Gladiatores", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Brentneedham", "r=Aszune&n=Brentneedham"], "Brentneedham", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Tujarema", "r=Aszune&n=Tujarema"], "Tujarema", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Namira", "r=Aszune&n=Namira"], "Namira", "7", "1", "4", text7race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Karkot", "r=Aszune&n=Karkot"], "Karkot", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Wolfshadow", "r=Aszune&n=Wolfshadow"], "Wolfshadow", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Nissekisse", "r=Aszune&n=Nissekisse"], "Nissekisse", "1", "1", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Sangdubh", "r=Aszune&n=Sangdubh"], "Sangdubh", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Lostlight", "r=Aszune&n=Lostlight"], "Lostlight", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Stoutfist", "r=Aszune&n=Stoutfist"], "Stoutfist", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Torfz", "r=Aszune&n=Torfz"], "Torfz", "4", "1", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Wolfstalker", "r=Aszune&n=Wolfstalker"], "Wolfstalker", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Jimtheaxe", "r=Aszune&n=Jimtheaxe"], "Jimtheaxe", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Pallen", "r=Aszune&n=Pallen"], "Pallen", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Constantïne", "r=Aszune&n=Constant%C3%AFne"], "Constantïne", "4", "1", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Kainlord", "r=Aszune&n=Kainlord"], "Kainlord", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Krazzywolf", "r=Aszune&n=Krazzywolf"], "Krazzywolf", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Muragon", "r=Aszune&n=Muragon"], "Muragon", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Holymash", "r=Aszune&n=Holymash"], "Holymash", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Coilz", "r=Aszune&n=Coilz"], "Coilz", "7", "0", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Storbrordk", "r=Aszune&n=Storbrordk"], "Storbrordk", "11", "0", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Aethazar", "r=Aszune&n=Aethazar"], "Aethazar", "7", "0", "4", text7race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Breel", "r=Aszune&n=Breel"], "Breel", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Lucyloose", "r=Aszune&n=Lucyloose"], "Lucyloose", "1", "1", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Medman", "r=Aszune&n=Medman"], "Medman", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Crewler", "r=Aszune&n=Crewler"], "Crewler", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Sanado", "r=Aszune&n=Sanado"], "Sanado", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Kenyon", "r=Aszune&n=Kenyon"], "Kenyon", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Rellir", "r=Aszune&n=Rellir"], "Rellir", "11", "1", "2", text11race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Aerius", "r=Aszune&n=Aerius"], "Aerius", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Biffur", "r=Aszune&n=Biffur"], "Biffur", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Legér", "r=Aszune&n=Leg%C3%A9r"], "Legér", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Arnvald", "r=Aszune&n=Arnvald"], "Arnvald", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Deack", "r=Aszune&n=Deack"], "Deack", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Laxelona", "r=Aszune&n=Laxelona"], "Laxelona", "7", "1", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Icafe", "r=Aszune&n=Icafe"], "Icafe", "1", "1", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Sakuya", "r=Aszune&n=Sakuya"], "Sakuya", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Adflog", "r=Aszune&n=Adflog"], "Adflog", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Snowelf", "r=Aszune&n=Snowelf"], "Snowelf", "4", "0", "1", text4race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Grantlife", "r=Aszune&n=Grantlife"], "Grantlife", "3", "0", "5", text3race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Gunjhon", "r=Aszune&n=Gunjhon"], "Gunjhon", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Helmhammer", "r=Aszune&n=Helmhammer"], "Helmhammer", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Dòóm", "r=Aszune&n=D%C3%B2%C3%B3m"], "Dòóm", "1", "1", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Misrule", "r=Aszune&n=Misrule"], "Misrule", "11", "1", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Profusion", "r=Aszune&n=Profusion"], "Profusion", "11", "0", "3", text11race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Marbella", "r=Aszune&n=Marbella"], "Marbella", "1", "1", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Theladim", "r=Aszune&n=Theladim"], "Theladim", "4", "1", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Fobbetre", "r=Aszune&n=Fobbetre"], "Fobbetre", "11", "0", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Leeah", "r=Aszune&n=Leeah"], "Leeah", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Tantrox", "r=Aszune&n=Tantrox"], "Tantrox", "3", "0", "5", text3race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Eisija", "r=Aszune&n=Eisija"], "Eisija", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Grindig", "r=Aszune&n=Grindig"], "Grindig", "7", "0", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Torak", "r=Aszune&n=Torak"], "Torak", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Ilana", "r=Aszune&n=Ilana"], "Ilana", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Krakgnar", "r=Aszune&n=Krakgnar"], "Krakgnar", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Syper", "r=Aszune&n=Syper"], "Syper", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Bitzi", "r=Aszune&n=Bitzi"], "Bitzi", "11", "1", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Reynad", "r=Aszune&n=Reynad"], "Reynad", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Stelar", "r=Aszune&n=Stelar"], "Stelar", "1", "0", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Hage", "r=Aszune&n=Hage"], "Hage", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Roseline", "r=Aszune&n=Roseline"], "Roseline", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Dimmina", "r=Aszune&n=Dimmina"], "Dimmina", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Lowlegs", "r=Aszune&n=Lowlegs"], "Lowlegs", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Ultranatural", "r=Aszune&n=Ultranatural"], "Ultranatural", "1", "0", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Snikkell", "r=Aszune&n=Snikkell"], "Snikkell", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Momkiller", "r=Aszune&n=Momkiller"], "Momkiller", "11", "0", "3", text11race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Mafien", "r=Aszune&n=Mafien"], "Mafien", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Wolfstrike", "r=Aszune&n=Wolfstrike"], "Wolfstrike", "11", "0", "8", text11race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Zenitha", "r=Aszune&n=Zenitha"], "Zenitha", "1", "1", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Priestshadow", "r=Aszune&n=Priestshadow"], "Priestshadow", "3", "1", "5", text3race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Stealthshiit", "r=Aszune&n=Stealthshiit"], "Stealthshiit", "1", "0", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Hjallish", "r=Aszune&n=Hjallish"], "Hjallish", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Mixons", "r=Aszune&n=Mixons"], "Mixons", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Yntss", "r=Aszune&n=Yntss"], "Yntss", "7", "0", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Moonmage", "r=Aszune&n=Moonmage"], "Moonmage", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Fjord", "r=Aszune&n=Fjord"], "Fjord", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Dkick", "r=Aszune&n=Dkick"], "Dkick", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Yamin", "r=Aszune&n=Yamin"], "Yamin", "7", "0", "1", text7race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Nesamoth", "r=Aszune&n=Nesamoth"], "Nesamoth", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Xtcy", "r=Aszune&n=Xtcy"], "Xtcy", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Nefarya", "r=Aszune&n=Nefarya"], "Nefarya", "4", "1", "1", text4race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Digitalrogue", "r=Aszune&n=Digitalrogue"], "Digitalrogue", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Snixzo", "r=Aszune&n=Snixzo"], "Snixzo", "1", "0", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Lypswig", "r=Aszune&n=Lypswig"], "Lypswig", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Hunterkíng", "r=Aszune&n=Hunterk%C3%ADng"], "Hunterkíng", "11", "0", "3", text11race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Bulb", "r=Aszune&n=Bulb"], "Bulb", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Fangirl", "r=Aszune&n=Fangirl"], "Fangirl", "1", "1", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Hinge", "r=Aszune&n=Hinge"], "Hinge", "3", "0", "5", text3race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Hadewijch", "r=Aszune&n=Hadewijch"], "Hadewijch", "1", "1", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Myown", "r=Aszune&n=Myown"], "Myown", "4", "0", "1", text4race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Flotmor", "r=Aszune&n=Flotmor"], "Flotmor", "7", "1", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Uhada", "r=Aszune&n=Uhada"], "Uhada", "3", "0", "4", text3race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Gedde", "r=Aszune&n=Gedde"], "Gedde", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Tadakatsu", "r=Aszune&n=Tadakatsu"], "Tadakatsu", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Awsed", "r=Aszune&n=Awsed"], "Awsed", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Bladexardas", "r=Aszune&n=Bladexardas"], "Bladexardas", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Digitalmage", "r=Aszune&n=Digitalmage"], "Digitalmage", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Sheck", "r=Aszune&n=Sheck"], "Sheck", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Poisonivie", "r=Aszune&n=Poisonivie"], "Poisonivie", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Raptoor", "r=Aszune&n=Raptoor"], "Raptoor", "1", "0", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Gleesa", "r=Aszune&n=Gleesa"], "Gleesa", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Loresvein", "r=Aszune&n=Loresvein"], "Loresvein", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Wolfrider", "r=Aszune&n=Wolfrider"], "Wolfrider", "11", "0", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Kladdh", "r=Aszune&n=Kladdh"], "Kladdh", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Alcarinlord", "r=Aszune&n=Alcarinlord"], "Alcarinlord", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Blastoise", "r=Aszune&n=Blastoise"], "Blastoise", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Beobear", "r=Aszune&n=Beobear"], "Beobear", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Lauuw", "r=Aszune&n=Lauuw"], "Lauuw", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Bazaroth", "r=Aszune&n=Bazaroth"], "Bazaroth", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Pinz", "r=Aszune&n=Pinz"], "Pinz", "1", "1", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Dangerouza", "r=Aszune&n=Dangerouza"], "Dangerouza", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Nazela", "r=Aszune&n=Nazela"], "Nazela", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Bluess", "r=Aszune&n=Bluess"], "Bluess", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Aylen", "r=Aszune&n=Aylen"], "Aylen", "4", "1", "5", text4race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Audrina", "r=Aszune&n=Audrina"], "Audrina", "1", "1", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Silentarrow", "r=Aszune&n=Silentarrow"], "Silentarrow", "4", "1", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Starwright", "r=Aszune&n=Starwright"], "Starwright", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Kurotango", "r=Aszune&n=Kurotango"], "Kurotango", "4", "1", "5", text4race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Elxia", "r=Aszune&n=Elxia"], "Elxia", "4", "1", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Allastor", "r=Aszune&n=Allastor"], "Allastor", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Wulliel", "r=Aszune&n=Wulliel"], "Wulliel", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Savagetail", "r=Aszune&n=Savagetail"], "Savagetail", "11", "1", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Dorgend", "r=Aszune&n=Dorgend"], "Dorgend", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Suaruman", "r=Aszune&n=Suaruman"], "Suaruman", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Maartins", "r=Aszune&n=Maartins"], "Maartins", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Sgtbuttmoore", "r=Aszune&n=Sgtbuttmoore"], "Sgtbuttmoore", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Luckziz", "r=Aszune&n=Luckziz"], "Luckziz", "11", "0", "8", text11race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Mungibungi", "r=Aszune&n=Mungibungi"], "Mungibungi", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Ruubje", "r=Aszune&n=Ruubje"], "Ruubje", "4", "1", "5", text4race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Davril", "r=Aszune&n=Davril"], "Davril", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Erinas", "r=Aszune&n=Erinas"], "Erinas", "11", "1", "5", text11race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Alexishbob", "r=Aszune&n=Alexishbob"], "Alexishbob", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Rocketfinger", "r=Aszune&n=Rocketfinger"], "Rocketfinger", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Indicot", "r=Aszune&n=Indicot"], "Indicot", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Childe", "r=Aszune&n=Childe"], "Childe", "11", "1", "3", text11race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Bsimon", "r=Aszune&n=Bsimon"], "Bsimon", "7", "0", "4", text7race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Gonmexx", "r=Aszune&n=Gonmexx"], "Gonmexx", "7", "0", "1", text7race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Smabsnab", "r=Aszune&n=Smabsnab"], "Smabsnab", "11", "0", "7", text11race, text7class]; raC++;
+	
+	  rightArray[raC] = [["Lalaandpo", "r=Aszune&n=Lalaandpo"], "Lalaandpo", "4", "1", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Cordon", "r=Aszune&n=Cordon"], "Cordon", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Whowhatwhere", "r=Aszune&n=Whowhatwhere"], "Whowhatwhere", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Takto", "r=Aszune&n=Takto"], "Takto", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Sarantis", "r=Aszune&n=Sarantis"], "Sarantis", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Roat", "r=Aszune&n=Roat"], "Roat", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Zoraa", "r=Aszune&n=Zoraa"], "Zoraa", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Misscandy", "r=Aszune&n=Misscandy"], "Misscandy", "4", "1", "5", text4race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Dfila", "r=Aszune&n=Dfila"], "Dfila", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Dennafan", "r=Aszune&n=Dennafan"], "Dennafan", "1", "1", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Asjes", "r=Aszune&n=Asjes"], "Asjes", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Mickeymb", "r=Aszune&n=Mickeymb"], "Mickeymb", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Rici", "r=Aszune&n=Rici"], "Rici", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Warinax", "r=Aszune&n=Warinax"], "Warinax", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Laiyo", "r=Aszune&n=Laiyo"], "Laiyo", "1", "1", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Birdpoo", "r=Aszune&n=Birdpoo"], "Birdpoo", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Palinka", "r=Aszune&n=Palinka"], "Palinka", "11", "1", "2", text11race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Adries", "r=Aszune&n=Adries"], "Adries", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Agesta", "r=Aszune&n=Agesta"], "Agesta", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Fogii", "r=Aszune&n=Fogii"], "Fogii", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Virgilli", "r=Aszune&n=Virgilli"], "Virgilli", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Eladan", "r=Aszune&n=Eladan"], "Eladan", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Kekss", "r=Aszune&n=Kekss"], "Kekss", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Neox", "r=Aszune&n=Neox"], "Neox", "7", "1", "4", text7race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Chesterf", "r=Aszune&n=Chesterf"], "Chesterf", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Aydana", "r=Aszune&n=Aydana"], "Aydana", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Dobbi", "r=Aszune&n=Dobbi"], "Dobbi", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Nordmannen", "r=Aszune&n=Nordmannen"], "Nordmannen", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Frozenx", "r=Aszune&n=Frozenx"], "Frozenx", "7", "0", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Supermagicma", "r=Aszune&n=Supermagicma"], "Supermagicma", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Zantan", "r=Aszune&n=Zantan"], "Zantan", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Normanov", "r=Aszune&n=Normanov"], "Normanov", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Iamnottheone", "r=Aszune&n=Iamnottheone"], "Iamnottheone", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Solopala", "r=Aszune&n=Solopala"], "Solopala", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Wolfgay", "r=Aszune&n=Wolfgay"], "Wolfgay", "3", "0", "3", text3race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Aranie", "r=Aszune&n=Aranie"], "Aranie", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Sed", "r=Aszune&n=Sed"], "Sed", "7", "0", "4", text7race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Sindibad", "r=Aszune&n=Sindibad"], "Sindibad", "1", "0", "8", text1race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Vomir", "r=Aszune&n=Vomir"], "Vomir", "7", "1", "8", text7race, text8class]; raC++;
+	
+	  rightArray[raC] = [["Holysticky", "r=Aszune&n=Holysticky"], "Holysticky", "1", "0", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Bigdan", "r=Aszune&n=Bigdan"], "Bigdan", "7", "0", "1", text7race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Mirx", "r=Aszune&n=Mirx"], "Mirx", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Sabrman", "r=Aszune&n=Sabrman"], "Sabrman", "1", "0", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Saterrus", "r=Aszune&n=Saterrus"], "Saterrus", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Plzdntdelete", "r=Aszune&n=Plzdntdelete"], "Plzdntdelete", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Quitguild", "r=Aszune&n=Quitguild"], "Quitguild", "1", "0", "4", text1race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Jtaggs", "r=Aszune&n=Jtaggs"], "Jtaggs", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Nidrunitro", "r=Aszune&n=Nidrunitro"], "Nidrunitro", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Krastim", "r=Aszune&n=Krastim"], "Krastim", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Entopias", "r=Aszune&n=Entopias"], "Entopias", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Hadrag", "r=Aszune&n=Hadrag"], "Hadrag", "3", "0", "2", text3race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Lomte", "r=Aszune&n=Lomte"], "Lomte", "11", "0", "3", text11race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Hayawarlock", "r=Aszune&n=Hayawarlock"], "Hayawarlock", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Nimana", "r=Aszune&n=Nimana"], "Nimana", "11", "1", "2", text11race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Mcronald", "r=Aszune&n=Mcronald"], "Mcronald", "1", "0", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Elexia", "r=Aszune&n=Elexia"], "Elexia", "11", "1", "5", text11race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Hipyelf", "r=Aszune&n=Hipyelf"], "Hipyelf", "4", "0", "3", text4race, text3class]; raC++;
+	
+	  rightArray[raC] = [["Paladynextra", "r=Aszune&n=Paladynextra"], "Paladynextra", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Hathuyrie", "r=Aszune&n=Hathuyrie"], "Hathuyrie", "11", "0", "1", text11race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Cyberdine", "r=Aszune&n=Cyberdine"], "Cyberdine", "11", "1", "5", text11race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Bockerz", "r=Aszune&n=Bockerz"], "Bockerz", "1", "1", "5", text1race, text5class]; raC++;
+	
+	  rightArray[raC] = [["Alphadruiden", "r=Aszune&n=Alphadruiden"], "Alphadruiden", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Cobar", "r=Aszune&n=Cobar"], "Cobar", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Outloss", "r=Aszune&n=Outloss"], "Outloss", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Locksrock", "r=Aszune&n=Locksrock"], "Locksrock", "7", "0", "9", text7race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Orankan", "r=Aszune&n=Orankan"], "Orankan", "3", "0", "1", text3race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Candycouture", "r=Aszune&n=Candycouture"], "Candycouture", "1", "1", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Hellsmate", "r=Aszune&n=Hellsmate"], "Hellsmate", "1", "0", "2", text1race, text2class]; raC++;
+	
+	  rightArray[raC] = [["Luppiexx", "r=Aszune&n=Luppiexx"], "Luppiexx", "7", "0", "4", text7race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Malii", "r=Aszune&n=Malii"], "Malii", "4", "1", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Lassemand", "r=Aszune&n=Lassemand"], "Lassemand", "4", "0", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Chaiosa", "r=Aszune&n=Chaiosa"], "Chaiosa", "4", "1", "4", text4race, text4class]; raC++;
+	
+	  rightArray[raC] = [["Sjobbie", "r=Aszune&n=Sjobbie"], "Sjobbie", "1", "0", "9", text1race, text9class]; raC++;
+	
+	  rightArray[raC] = [["Peovov", "r=Aszune&n=Peovov"], "Peovov", "1", "1", "1", text1race, text1class]; raC++;
+	
+	  rightArray[raC] = [["Rentun", "r=Aszune&n=Rentun"], "Rentun", "4", "0", "11", text4race, text11class]; raC++;
+	
+	  rightArray[raC] = [["Hagei", "r=Aszune&n=Hagei"], "Hagei", "11", "0", "8", text11race, text8class]; raC++;
+	
+    rightArray.sort(sortNumberRightAs);	
+
+	function returnArrayPos(theElement, theArray) {
+		for (var x=0; x<theArray.length; x++) {
+			if (theElement == theArray[x][1])
+				return x;
+		}
+		return 1;
+	}
+	setcookie("cookieRightPage", (Math.ceil(returnArrayPos(globalCurChar, rightArray)/20)));	
+
+	</script>
+<div id="divBackTop"></div>
+<div id="divRight"></div>
+<div id="divForwardBot"></div>
+<div id="divPagingBot"></div>
+<script src="/js/paging/right/functions.js" type="text/javascript"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="rinfo">
+<div class="tip">
+<table>
+<tr>
+<td class="tip-top-left"></td><td class="tip-top"></td><td class="tip-top-right"></td>
+</tr>
+<tr>
+<td class="tip-left"></td><td class="tip-bg">
+<div class="rlinks">
+<div class="profile-wrapper">
+<blockquote>
+<table>
+<tr>
+<td class="rtd"><b class="ilinks">
+<h2>Related Links</h2>
+</b></td><td><b class="ifaq">
+<h2>Frequently Asked Questions</h2>
+</b></td>
+</tr>
+</table>
+</blockquote>
+<div class="rel-section">
+<table>
+<tr>
+<td class="rtd" valign="top">
+<div class="related-links" id="noflash-message">
+<div class="rlbox1">
+<ul>
+<li>
+<b class="noflash">Alert: Adobe Flash Player 8+ Required</b>
+<br>
+<a class="noflash" href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"><img align="right" class="p" src="images/en_us/getflash.gif"></a>We've detected that you either do not have Adobe Flash Player or are using a version prior to version 8. The Armory requires Flash Player 8 (or later) in order to take full advantage of all the site's features. Click the button above to install the latest version of Adobe Flash Player.</li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+	if(!MM_FlashCanPlay)
+		showNoflashMessage();
+</script>
+<div class="related-links">
+<div class="rlbox1">
+<div style="padding:6px 0;">
+<div class="language-filter" style="z-index:4;">
+<strong>Region:</strong>
+<br>
+<script type="text/javascript">
+
+    var varOverRegion = 0;
+
+
+</script>
+<div class="dropdown3" onMouseOut="javascript: varOverRegion = 0;" onMouseOver="javascript: varOverRegion = 1;">
+<a class="set-lang" href="javascript: document.formDropdownRegion.dummyRegion.focus();" id="displayRegion">Europe</a>
+</div>
+<div style="position: relative;">
+<div style="position: absolute;">
+<form id="formDropdownRegion" name="formDropdownRegion" style="height: 0px;">
+<input id="dummyRegion" onBlur="javascript: if(!varOverRegion) document.getElementById('dropdownHiddenRegion').style.display='none';" onFocus="javascript: dropdownMenuToggle('dropdownHiddenRegion');" size="2" style="position: relative; left: -5000px;" type="button">
+</form>
+</div>
+</div>
+<div class="drop-lang" id="dropdownHiddenRegion" onMouseOut="javascript: varOverRegion = 0;" onMouseOver="javascript: varOverRegion = 1;" style="display: none; z-index: 9909;">
+<div class="light-tip">
+<table>
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"><q></q></td><td class="bg">
+<ul>
+<li>
+<a href="http://www.wowarmory.com">US &amp; Oceanic</a>
+</li>
+<li>
+<a href="http://eu.wowarmory.com">Europe</a>
+</li>
+<li>
+<a href="http://kr.wowarmory.com">한국</a>
+</li>
+<li>
+<a href="http://cn.wowarmory.com">中国大陆</a>
+</li>
+<li>
+<a href="http://tw.wowarmory.com">台灣、香港與澳門</a>
+</li>
+</ul>
+</td><td class="r"><q></q></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="language-filter">
+<strong>Language:</strong>
+<br>
+<script type="text/javascript">
+
+    var varOverLang = 0;
+
+
+</script>
+<div class="dropdown4" onMouseOut="javascript: varOverLang = 0;" onMouseOver="javascript: varOverLang = 1;">
+<a class="set-lang" href="javascript: document.formDropdownLang.dummyLang.focus();" id="displayLang">English</a>
+</div>
+<div style="position: relative;">
+<div style="position: absolute;">
+<form id="formDropdownLang" name="formDropdownLang" style="height: 0px;">
+<input id="dummyLang" onBlur="javascript: if(!varOverLang) document.getElementById('dropdownHiddenLang').style.display='none';" onFocus="javascript: dropdownMenuToggle('dropdownHiddenLang');" size="2" style="position: relative; left: -5000px;" type="button">
+</form>
+</div>
+</div>
+<div class="drop-lang" id="dropdownHiddenLang" onMouseOut="javascript: varOverLang = 0;" onMouseOver="javascript: varOverLang = 1;" style="display: none; z-index: 50;">
+<div class="light-tip">
+<table>
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"><q></q></td><td class="bg">
+<ul>
+<li>
+<a href="javascript: selectLang('English', 'en');">English</a>
+</li>
+<li>
+<a href="javascript: selectLang('Deutsch', 'de_de');">Deutsch</a>
+</li>
+<li>
+<a href="javascript: selectLang('Espa%C3%B1ol', 'es');">Espa&ntilde;ol</a>
+</li>
+<li>
+<a href="javascript: selectLang('Fran%C3%A7ais', 'fr_fr');">Fran&ccedil;ais</a>
+</li>
+<li>
+<a href="javascript: selectLang('%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9', 'ru_ru');">Русский</a>
+</li>
+<li>
+<a href="javascript: selectLang('%ED%95%9C%EA%B5%AD%EC%96%B4', 'ko_kr');">한국어</a>
+</li>
+<li>
+<a href="javascript: selectLang('%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87', 'zh_cn');">简体中文</a>
+</li>
+<li>
+<a href="javascript: selectLang('%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87', 'zh_tw');">繁體中文</a>
+</li>
+</ul>
+</td><td class="r"><q></q></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="lrs"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="rlbox">
+<ul>
+<li class="">
+<a href="/character-search.xml">Character Search</a>
+</li>
+<li class="hr">
+<em>
+<!--ie height fix--></em>
+</li>
+<li class="external">
+<a href="http://www.worldofwarcraft.com/info/basics/characters.html" onmouseout="hideTip();" onmouseover="showTip('This link will take you outside the Armory')" target="_blank">Character Attributes Guide</a>
+</li>
+<li class="external">
+<a href="http://www.worldofwarcraft.com/info/races/index.html" onmouseout="hideTip();" onmouseover="showTip('This link will take you outside the Armory')" target="_blank">Races</a>
+</li>
+<li class="external">
+<a href="http://www.worldofwarcraft.com/info/classes/index.html" onmouseout="hideTip();" onmouseover="showTip('This link will take you outside the Armory')" target="_blank">Classes</a>
+</li>
+<li class="external">
+<a href="http://www.worldofwarcraft.com/info/professions/index.html" onmouseout="hideTip();" onmouseover="showTip('This link will take you outside the Armory')" target="_blank">Professions</a>
+</li>
+<li class="hr">
+<em>
+<!--ie height fix--></em>
+</li>
+<li class="">
+<a href="/faq-armory.xml">F.A.Q.s</a>
+</li>
+<li class="">
+<a href="http://forums.worldofwarcraft.com/thread.html?topicId=2765957433&amp;sid=1">Known Issues</a>
+</li>
+<li class="report">
+<a href="mailto:wowarmory@blizzard.com?subject=WoW Armory Error&amp;body=Type your error report below. Browser Agent: REPLACEBROWSER. Error on page: REPLACEURL" id="reportLink" onmouseout="hideTip();" onmouseover="showTip('Report all Armory related bugs and issues to <b>wowarmory@blizzard.com</b>')">Report an Error</a><script type="text/javascript">
+  var urlArmory = "http://www.wowarmory.com";
+  replaceLink(urlArmory);
+</script>
+</li>
+</ul>
+</div>
+</div>
+</td><td class="faqtd" valign="top">
+<div class="faq">
+<div class="rlbox2">
+<div class="faq-links">
+<ol>
+<li>
+<a href="javascript:faqSwitch(1);"><span class="faq-off" id="faqlink1">What is the "Find an Upgrade" option for items in a character profile?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(2);"><span class="faq-off" id="faqlink2">How do the combat ratings translate at level 70?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(3);"><span class="faq-off" id="faqlink3">Why isn't my character sheet appearing?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(4);"><span class="faq-off" id="faqlink4">Why can't I find my low level character?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(5);"><span class="faq-off" id="faqlink5">Why do I have what appear to be temporary buffs and debuffs appearing on my character sheet?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(6);"><span class="faq-off" id="faqlink6">Where can I view all the arena icons?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(7);"><span class="faq-off" id="faqlink7">Why aren't my lifetime honorable kills displayed?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(8);"><span class="faq-off" id="faqlink8">Why isn&rsquo;t my ammo slot appearing on my character sheet?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(9);"><span class="faq-off" id="faqlink9">Why is the character portrait in my character profile not as at appears in-game?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(10);"><span class="faq-off" id="faqlink10">What are the different titles players can earn?</span></a>
+</li>
+<li>
+<a href="javascript:faqSwitch(11);"><span class="faq-off" id="faqlink11">Can I control what types of information are displayed on the Armory?</span></a>
+</li>
+</ol>
+</div>
+<div class="speak-bubble">
+<table class="sb">
+<tr>
+<td class="b-top-left"></td><td class="b-top"></td><td class="b-top-right"></td>
+</tr>
+<tr>
+<td class="b-left">
+<div class="shim btable"></div>
+</td><td class="b-bg">
+<div id="faq1" style="display:none;">
+<h2>What is the "Find an Upgrade" option for items in a character profile?</h2>
+			Mousing over any item in a character profile will display a small arrow that turns into a button. Clicking this "Find an Upgrade" button will take you to an item search results page. On this page will be a list of items that may be considered upgrades for that item and for that particular character.
+			<p></p>
+			These recommended upgrades will take into account the character&rsquo;s class, statistics, and overall gear quality. In this manner, you can look for upgrades for your character&rsquo;s items as well as for any other character in World of Warcraft. This feature is also intended to be helpful for characters with multiple gear sets, as they can find upgrades for all their sets. The recommended upgrades feature will produce the most accurate results when used on characters that have no buffs affecting their statistics.
+			<p></p>
+			Read more at our <a href="faq-item-info-recommended.xml;">Find an Upgrade FAQ</a>.
+		</div>
+<div id="faq2" style="display:none;">
+<h2>How do the combat ratings translate at level 70?</h2>
+			Refer to our <a href="http://forums.worldofwarcraft.com/thread.html?topicId=36573662&amp;sid=1">complied list</a> of the various combat ratings adjusted for level 70 characters. Combat ratings include metrics such as hit rating, crit rating, defense, and resilience. 			
+		</div>
+<div id="faq3" style="display:none;">
+<h2>Why isn't my character sheet appearing?</h2>
+			Only characters on US realms are stored here, as this is the US version of the Armory. To switch to a different region, such as Europe, go to their regional World of Warcraft website and access the Armory from there. In addition, a character must be recently active to have its profile appear on the Armory. Finally, your character must be at least level 10 to have their character sheet appear.
+		</div>
+<div id="faq4" style="display:none;">
+<h2>Why can't I find my low level character?</h2>
+			Characters must be at least level 10 to appear in the Armory, including having a character profile as well as appearing in a results page for a character name search.
+		</div>
+<div id="faq5" style="display:none;">
+<h2>Why do I have what appear to be temporary buffs and debuffs appearing on my character sheet?</h2>
+			The way the character sheet is updated currently includes all active buffs and debuffs on your character at the time you log out of the game, including item-based buffs. We plan on addressing and possibly changing the current implementation at some point in the future.
+		</div>
+<div id="faq6" style="display:none;">
+<h2>Where can I view all the arena icons?</h2>
+			You may view all the obtainable arena icons <a href="legend-achievements.xml" target="_blank">here</a>.
+		</div>
+<div id="faq7" style="display:none;">
+<h2>Why aren't my lifetime honorable kills displayed?</h2>
+			In order to have your lifetime honorable kills displayed, you must have at least 1337 honorable kills.
+		</div>
+<div id="faq8" style="display:none;">
+<h2>Why isn&rsquo;t my ammo slot appearing on my character sheet?</h2>
+			This functionality will be added at some point in the future.
+		</div>
+<div id="faq9" style="display:none;">
+<h2>Why is the character portrait in my character profile not as at appears in-game?</h2>
+			The Armory does not show an actual in-game picture of your character in the top left of your profile. The portraits are automatically generated for all characters of a particular level range, race, class, and gender combination.
+		</div>
+<div id="faq10" style="display:none;">
+<h2>What are the different titles players can earn?</h2>
+			For a complete list of titles, please visit our <a href="http://www.worldofwarcraft.com/info/basics/titles.html">Character Titles page</a>.
+		</div>
+<div id="faq11" style="display:none;">
+<h2>Can I control what types of information are displayed on the Armory?</h2>
+			In the future, more types of information will be added to the Armory. Some of this new information may have a default state of being "private" in that it cannot be viewed by others. However, you will have the option to toggle some or all of this new information as "public" at your discretion.
+		</div>
+<div class="faq-desc">
+<em></em>
+<div id="faq-container"></div>
+</div>
+</td><td class="b-right">
+<div class="shim btable"></div>
+</td>
+</tr>
+<tr>
+<td class="b-bot-left"></td><td class="b-bot"></td><td class="b-bot-right"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</td><td class="tip-right"></td>
+</tr>
+<tr>
+<td class="tip-bot-left"></td><td class="tip-bot"></td><td class="tip-bot-right"></td>
+</tr>
+</table>
+</div>
+</div>
+<script type="text/javascript">
+	faqSwitch(currentFaq);
+</script>
+</div>
+</div>
+</div>
+<script src="js/mini-search-ajax.js" type="text/javascript"></script><script src="js/character-info-ajax.js" type="text/javascript"></script><script type="text/javascript">
+    if (characterInfoPageInstance) {
+        characterInfoPageInstance.setXmlUrl("character-sheet.xml");
+    }
+</script>
+</div>
+<div class="tooltip" id="tooltipcontainer" onmouseout="hideTip();">
+<div id="tool1container">
+<table>
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"><q></q></td><td class="bg">
+<div id="toolBox">TEST</div>
+</td><td class="r"><q></q></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+</div>
+<table id="tool2container" style="float:left; display:none; margin-top: 10px;">
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"><q></q></td><td class="bg">
+<div id="toolBox_two">TEST</div>
+</td><td class="r"><q></q></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+<table id="tool3container" style="float:left; display:none; margin-top: 10px;">
+<tr>
+<td class="tl"></td><td class="t"></td><td class="tr"></td>
+</tr>
+<tr>
+<td class="l"><q></q></td><td class="bg">
+<div id="toolBox_three">TEST</div>
+</td><td class="r"><q></q></td>
+</tr>
+<tr>
+<td class="bl"></td><td class="b"></td><td class="br"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="footerplate">
+<a href="http://www.blizzard.com"></a>
+</div>
+<div class="copyright">&copy;2008 Blizzard Entertainment, Inc. All rights reserved.<br>
+</div>
+</td><td class="section-general" id="imageRight" width="50%"></td>
+</tr>
+</table>
+<div id="output"></div>
+<script type="text/javascript">
+  rightSideImageReady=1;
+  if(rightSideImage)
+    changeRightSideImage(rightSideImage);
+	
+	
+  	var elemt1c = document.getElementById("tool1container");
+	var elemttc = document.getElementById("tooltipcontainer");	
+	var elemt2c = document.getElementById("tool2container");
+	var elemt3c = document.getElementById("tool3container");
+	var elemtb1 = document.getElementById("toolBox");
+	var elemtb2 = document.getElementById("toolBox_two");
+	var elemtb3 = document.getElementById("toolBox_three");
+	var elemDoc = document.documentElement;
+	
+</script><script src="/shared/global/menu/en_us/menutree.js" type="text/javascript"></script><script src="/shared/global/menu/menu132_com.js" type="text/javascript"></script><script src="js/en_us/menus.js" type="text/javascript"></script><script src="/shared/global/third-party/sarissa/0.9.7.6/sarissa.js" type="text/javascript"></script><script src="/shared/global/third-party/sarissa/0.9.7.6/sarissa_dhtml.js" type="text/javascript"></script><script src="js/ajaxtooltip.js" type="text/javascript"></script><script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-544112-17");
+pageTracker._setDomainName("wowarmory.com");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
