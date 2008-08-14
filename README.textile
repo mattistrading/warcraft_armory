@@ -12,9 +12,15 @@ h2. Disclaimer
 
 This is the usual dislaimer. I'm not liable when you use this gem. Using it may be against the current (or future) terms of service from Blizzard or WoWarmory.com. 
 
+h2. Dependencies
+
+WarcraftArmory depends on the hpricot gem version >= 0.6.
+
+<pre>gem install hpricot</pre>
+
 h2. Download and installation
 
-Simply install the RubyGem and require it in your project. If you're on rails, require it in your config/environment.rb
+Simply install the RubyGem and require it in your project. If you're on rails, require it in your config/environment.rb.
 
 <pre>gem install ariejan-warcraft-armory --source http://gems.github.com</pre>
 
